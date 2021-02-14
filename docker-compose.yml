@@ -1,6 +1,6 @@
 version: '3'
 services:
-  lara_dock_spa_web:
+  web:
     build: .
     container_name: lara_dock_spa_web
     volumes:
@@ -8,7 +8,7 @@ services:
     ports:
       - 8081:8081
       - 3000:3000
-  lara_dock_spa_db:
+  db:
     image: mariadb:latest
     container_name: lara_dock_spa_db
     environment:
